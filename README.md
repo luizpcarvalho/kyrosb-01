@@ -28,19 +28,21 @@ Para cadastro de cliente, utilize a URL a seguir com o método POST, além de co
 
 Um exemplo de JSON para cadastro:
 
-> {
+```
+{
 
-> "nome": "John Smith",
+	"nome": "John Smith",
 
->  "cpf": "151.624.660-85",
+	"cpf": "151.624.660-85",
 
->  "dataNascimento": "23/11/1995",
+	"dataNascimento": "23/11/1995",
 
->  "email": "kyros@gmail.com",
+	"email": "kyros@gmail.com",
 
->  "telefone": "(34)98888-8888"
+	"telefone": "(34)98888-8888"
 
-> }
+}
+```
 
 Caso os dados sejam validados sem erros, será retornado o status HTTP 201 CREATED e a id do cliente cadastrado no body.
 
@@ -52,19 +54,21 @@ Para alteração dos dados do cliente, utilize a URL a seguir com o método PUT,
 
 Um exemplo de JSON para alteração:
 
-> {
+```
+{
 
->  "nome": "John Smith Silva",
+	"nome": "John Smith Silva",
 
->  "cpf": "081.686.896-40",
+	"cpf": "081.686.896-40",
 
->  "dataNascimento": "16/05/1969",
+	"dataNascimento": "16/05/1969",
 
->  "email": "kyrostecnologia@gmail.com",
+	"email": "kyrostecnologia@gmail.com",
 
->  "telefone": "(34)97777-7777"
+	"telefone": "(34)97777-7777"
 
-> }
+}
+```
 
 Caso os dados sejam validados sem erros, será retornado o status HTTP 200 OK e uma mensagem de sucesso no body.
 
